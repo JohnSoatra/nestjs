@@ -9,4 +9,12 @@ export class AppController {
     getHello(): string {
         return this.appService.getHello();
     }
+
+    @Get()
+    getJson(): {name: string, age: number} {
+        return {
+            name: 'Soatra',
+            age: 20
+        };
+    }
 }
